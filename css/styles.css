@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Archivo');
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+
+*{
+	margin: 0;
+	padding: 0;
+	transition: all ease-in-out 550ms;
+	
+}
+
+body{
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+#home {
+	height:100vh;
+	/*GKMC*/
+	/*background-image: -webkit-linear-gradient(top, #00C9FF, #92FE9D); /* For Chrome and Safari */
+	/*background-image:    -moz-linear-gradient(top, #29587a, #63a3c4, #282836, #526e65); /* For old Fx (3.6 to 15) */
+	/*background-image:     -ms-linear-gradient(top, #29587a, #63a3c4, #282836, #526e65); /* For pre-releases of IE 10*/
+	/*background-image:      -o-linear-gradient(top, #29587a, #63a3c4, #282836, #526e65); /* For old Opera (11.1 to 12.0) */
+	/*background-image:         linear-gradient(to bottom, #29587a, #63a3c4, #282836, #526e65); /* Standard syntax; must be last */
+
+	/*TPAB*/
+	/*background-image: -webkit-linear-gradient(top, #eef2f3,#8e9eab); /* For Chrome and Safari */
+	/*background-image:    -moz-linear-gradient(top, #29587a, #63a3c4, #282836, #526e65); /* For old Fx (3.6 to 15) */
+	/*background-image:     -ms-linear-gradient(top, #29587a, #63a3c4, #282836, #526e65); /* For pre-releases of IE 10*/
+	/*background-image:      -o-linear-gradient(top, #29587a, #63a3c4, #282836, #526e65); /* For old Opera (11.1 to 12.0) */
+	/*background-image:         linear-gradient(to bottom, #29587a, #63a3c4, #282836, #526e65); /* Standard syntax; must be last */
+
+	/*DAMN*/
+	/*background-image: -webkit-linear-gradient(top, #EB5757,#000000); /* For Chrome and Safari */
+	/*background-image:    -moz-linear-gradient(top, #29587a, #63a3c4, #282836, #526e65); /* For old Fx (3.6 to 15) */
+	/*background-image:     -ms-linear-gradient(top, #29587a, #63a3c4, #282836, #526e65); /* For pre-releases of IE 10*/
+	/*background-image:      -o-linear-gradient(top, #29587a, #63a3c4, #282836, #526e65); /* For old Opera (11.1 to 12.0) */
+	/*background-image:         linear-gradient(to bottom, #29587a, #63a3c4, #282836, #526e65); /* Standard syntax; must be last */
+}
+
+#title-board{
+	width:54vw;
+	height:100vh;
+	background-color:black;
+	position:relative;
+	float:left;
+	z-index:5;
+	
+
+}
+
+#kendrick{
+	left:24vw;
+	bottom:-.3em;
+	height:80vh;
+	width:100vh;
+	z-index:10;
+	position:absolute;
+	pointer-events:none;
+
+}
+
+/*#kendrick img{
+	height:80vh;
+	width:100vh;
+	z-index:10;
+	position:absolute;
+}*/
+
+#main-title{
+	color:white;
+	font-family: 'Lato', sans-serif;
+	font-style:italic;
+	padding-top:3em;
+	padding-left:2em;
+
+}
+
+#main-title h1{
+	font-size:9em;
+}
+
+#main-title h4{
+	font-size:2em;
+}
+
+#album-titles{
+	padding-top:3em;
+	position:relative;
+	z-index:900;
+}
+
+#album-titles h4{
+	text-align:left;
+	padding-top:1em;
+	font-family: 'Rock Salt', cursive;
+	font-size:2em;
+	padding-left:2em;
+	display:block;
+	position:relative;
+	z-index:900;
+	color:grey;
+	
+
+}
+
+#album-titles h4:hover{
+	color:white;
+}
+
+
+
+#lyrics{
+	float:center;
+	font-family: 'Open Sans', sans-serif;
+	font-size:4em;
+	font-weight:1000;
+	opacity:.2;
+	position:absolute;
+	vertical-align:middle;
+	color:white;
+	z-index:2;
+	overflow :hidden;
+   
+      
+    text-overflow: ellipsis;
+
+
+}
+
+#lyrics p{
+	text-align:center;
+	transform: translate(10em,-8em) rotate(-45deg);
+
+
+}
+
+#about{
+	height:100vh;
+	background-color:black;
+	position:relative;
+	z-index:90;
+}
+
+
+
+#maindiv{
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+#div1 {
+  
+  animation: marquee 150s linear infinite;
+}
+
+
+
+@keyframes marquee {
+  0%   {transform: translateY(10%);}
+  50%  {transform: translateY(-21%);}
+  100% {transform: translateY(10%);}
+}
+
+/*gkmc*/
+#gkmc-hero{
+	height:150vh;
+	background-color:black;
+	position:relative;
+	z-index:90;
+	background-image: -webkit-linear-gradient(top, #30E8BF, #FF8235);
+}
+
+.bg{
+  background:black;  
+  height:15vh;
+  width:100vw;
+  position:relative;
+  color:white;
+}
+
+.bg h2{
+	padding-top:1em;
+	padding-left:.5em;
+	font-family:font-family: 'Lato', sans-serif;
+	font-style:italic;
+	font-size:7em;
+	position:relative;
+	z-index:40;
+	transform: rotate(-10deg);
+
+}
+
+.bg::after{
+    position:absolute;
+    top:100%;
+    left:0;
+    content:'';
+    height:0;
+    width:0;
+    border-left:100vw solid black;
+    border-bottom:20vw solid transparent;
+    border-top:0px solid transparent;
+    overflow:hidden;
+  }
+
