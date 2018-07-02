@@ -14,6 +14,10 @@
 	
 }
 
+#preload-01 { background: url(tpab.jpg) no-repeat -9999px -9999px; }
+#preload-02 { background: url(good.png) no-repeat -9999px -9999px; }
+#preload-03 { background: url(damn.jpg) no-repeat -9999px -9999px; }
+
 body{
 	max-width: 100%;
     overflow-x: hidden;
