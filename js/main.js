@@ -3,6 +3,14 @@ var imageFile = ["url(tpab.jpg)","url(good.png)", "url(damn.jpg)"];
 var imageFile2 = ["kendrick_tpab.png","kendrick_gkmc3.png", "kendrick_damn.png"]
 $("#home").css('background-image', imageFile[1]);
 
+img1 = new Image();
+                img2 = new Image();
+                img3 = new Image();
+
+                img1.src = "tpab.jpg";
+                img2.src = "good.png";
+                img3.src = "damn.jpg";
+
 document.getElementById("tpab").addEventListener("mouseover", function(){
     //document.getElementById("home").style.backgroundImage = '-webkit-linear-gradient(top, #eef2f3,#8e9eab)';
     $("#home").css('background-image', imageFile[0]).fadeIn(3000);
