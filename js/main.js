@@ -37,3 +37,35 @@ document.getElementById("damn").addEventListener("mouseover", function(){
     $("#kendrick").fadeIn(3000).attr("src",imageFile2[2]);
     document.getElementById("lyrics-content").innerHTML = "Is it wickedness? Is it weakness? I seen a woman—a blind woman You've lost… your life. Loyalty, got royalty inside my DNA I got, I got, I got, I got— I know murder, conviction Burners, boosters, burglars, ballers, dead, redemption My DNA not for imitation Mama told me that I'ma work myself to death I'm a Israelite, don't call me Black no mo' Ain't nobody prayin' for me WI can feel it, the dream is more than process What happens on Earth stays on Earth  Why God, why God do I gotta suffer? I beat yo ass, keep talkin' back I do it for Compton go to Cuba, that's the only option Difference between black artists and wack artists I'm a savage, I'm a asshole, I'm a king Sit down be humble (hol up hol up hol up hol up All this money, is God playin' a joke on me? I need some water Damn, love or lust Walk myself to the court like, 'Bitch, I did that!'' X-rated If somebody kill my son, that mean somebody gettin' killed. (Pray for me) Damn! America's reflections of me, that's what a mirror does";
 });
+
+
+$(window).scroll(function () {
+    
+    var topDivHeight = $("#home").height() + $("#about").height();
+    var viewPortSize = $(window).height();
+
+    var triggerAt = 150;
+    var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
+
+    if ($(window).scrollTop() - (viewPortSize / 2) >= triggerHeight) {
+        /*$('.home-about-info').slideDown(1000);
+        $('.home-about-img').slideDown(1000);
+        $(this).off('scroll');*/
+        console.log($(window).scrollTop() - (viewPortSize / 2) - triggerHeight);
+        //$("#city").css("bottom",(($(window).scrollTop() - (viewPortSize / 2) - triggerHeight)/10) +"px");
+        $('#city').animate({
+    right: [ "20vw", "linear" ],
+    opacity: [1,"linear"],
+    width:["150vw","linear"],
+    height:["150vh","linear"],
+    paddingTop:["10vh","linear"]
+}, 900 );
+        $('#trees').animate({
+    left: [ "20vw", "linear" ]
+}, 900 );
+        $('#cars').animate({
+    left: [ "1vw", "linear" ]
+}, 900 );
+        $(this).off('scroll');
+    }
+});

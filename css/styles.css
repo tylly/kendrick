@@ -14,9 +14,9 @@
 	
 }
 
-#preload-01 { background: url(tpab.jpg) no-repeat -9999px -9999px; }
-#preload-02 { background: url(good.png) no-repeat -9999px -9999px; }
-#preload-03 { background: url(damn.jpg) no-repeat -9999px -9999px; }
+#preload-01 { background: url(../tpab.jpg) no-repeat -9999px -9999px; }
+#preload-02 { background: url(../good.png) no-repeat -9999px -9999px; }
+#preload-03 { background: url(../damn.jpg) no-repeat -9999px -9999px; }
 
 body{
 	max-width: 100%;
@@ -177,13 +177,26 @@ a{
 }
 
 /*gkmc*/
+
 #gkmc-hero{
-	height:150vh;
-	background-color:black;
+	height:100vh;
+	width:100%;
 	position:relative;
 	z-index:90;
-	background-image: -webkit-linear-gradient(top, #30E8BF, #FF8235);
 }
+
+#main-gkmc{
+	height:150vh;
+	background:url("../clouds1.png");
+	
+  	animation: slideleft 6000s infinite linear;
+}
+
+@keyframes slideleft {
+  from { background-position: 0%; }
+  to { background-position: 90000%; }
+}
+
 
 .bg{
   background:black;  
@@ -217,4 +230,34 @@ a{
     border-top:0px solid transparent;
     overflow:hidden;
   }
+
+#city{
+	position:relative;
+	z-index:5;
+	padding-top:20vh;
+	width:130vw;
+	height:110vh;
+	opacity:.5;
+
+}
+
+#trees{
+	position:absolute;
+	z-index:20;
+	height:60vh;
+	top:85vh;
+	opacity:1;
+	width:180vh;
+
+}
+#cars{
+	position:absolute;
+	z-index:30;
+	top:100vh;
+	left:90vw;
+	height:45vh;
+	width:90vh;
+
+
+}
 
