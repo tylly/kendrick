@@ -41,7 +41,7 @@ document.getElementById("damn").addEventListener("mouseover", function(){
 
 $(window).scroll(function () {
     
-    var topDivHeight = $("#home").height() + $("#about").height();
+    var topDivHeight = $("#home").height() + $("#about").height() + ($("#ting").height()*4);
     var viewPortSize = $(window).height();
 
     var triggerAt = 150;
@@ -57,7 +57,7 @@ $(window).scroll(function () {
     right: [ "20vw", "linear" ],
     opacity: [1,"linear"],
     width:["150vw","linear"],
-    height:["150vh","linear"],
+    height:["120vh","linear"],
     paddingTop:["10vh","linear"]
 }, 900 );
         $('#trees').animate({
@@ -66,6 +66,14 @@ $(window).scroll(function () {
         $('#cars').animate({
     left: [ "1vw", "linear" ]
 }, 900 );
+
+        $('#gkmc-info').animate({
+            opacity: ["0","linear"]
+        },1200).animate({
+            opacity: ["1","linear"]
+        },200);
         $(this).off('scroll');
     }
+    
 });
+

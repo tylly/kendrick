@@ -186,7 +186,7 @@ a{
 }
 
 #main-gkmc{
-	height:150vh;
+	height:130vh;
 	background:url("../clouds1.png");
 	
   	animation: slideleft 6000s infinite linear;
@@ -207,11 +207,11 @@ a{
 }
 
 .bg h2{
-	padding-top:1em;
+	padding-top:26vh;
 	padding-left:.5em;
 	font-family:font-family: 'Lato', sans-serif;
 	font-style:italic;
-	font-size:7em;
+	font-size:3em;
 	position:relative;
 	z-index:40;
 	transform: rotate(-10deg);
@@ -234,9 +234,9 @@ a{
 #city{
 	position:relative;
 	z-index:5;
-	padding-top:20vh;
+	padding-top:40vh;
 	width:130vw;
-	height:110vh;
+	height:90vh;
 	opacity:.5;
 
 }
@@ -247,7 +247,7 @@ a{
 	height:60vh;
 	top:85vh;
 	opacity:1;
-	width:180vh;
+	width:130vw;
 
 }
 #cars{
@@ -259,5 +259,37 @@ a{
 	width:90vh;
 
 
+}
+
+#gkmc-info{
+	position:absolute;
+	z-index:50;
+	height:90vh;
+	top:50vh;
+	left:6vw;
+	opacity:0;
+	width:90vw;
+	background:rgba(0,0,0,0.8); 
+	color:white;
+}
+
+.info-headers{
+	padding: 4em;
+}
+
+.info-headers li{
+	list-style:none;
+	padding-right:2em;
+	font-family: 'Lato', sans-serif;
+	font-style:italic;
+	font-size:1.5em;
+}
+
+.info-headers a:hover{
+	color:#00FFB4;
+}
+
+ul{
+	display:flex;
 }
 
