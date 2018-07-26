@@ -185,6 +185,13 @@ a{
 	z-index:90;
 }
 
+#tpab-hero{
+	height:100vh;
+	width:100%;
+	position:relative;
+	z-index:90;
+}
+
 #main-gkmc{
 	height:130vh;
 	background:url("../clouds1.png");
@@ -195,6 +202,11 @@ a{
 @keyframes slideleft {
   from { background-position: 0%; }
   to { background-position: 90000%; }
+}
+
+@keyframes slideup {
+  from { background-position: 0% 0%; }
+  to { background-position: 0% -90000%; }
 }
 
 
@@ -285,9 +297,65 @@ a{
 	font-size:1.5em;
 }
 
-.info-headers a:hover{
+.gkmc-menu a:hover{
 	color:#00FFB4;
 }
+
+#main-tpab{
+	height:107vh;
+	background:url("../clouds-tpab2.png");
+	background-color:grey;
+	
+  	animation: slideup 300s infinite linear;
+}
+
+#falling{
+	position:absolute;
+	z-index:30;
+	width:30vw;
+	height:80vh;
+	left:5vw;
+	top:20vh;	
+
+}
+
+.bg-2{
+  background:black;  
+  height:5vh;
+  width:100vw;
+  position:relative;
+  color:white;
+}
+
+.bg-2 h2{
+	padding-top:3vh;
+	text-align:right;
+	padding-right:2em;
+	font-family:font-family: 'Lato', sans-serif;
+	font-style:italic;
+	font-size:3em;
+	position:relative;
+	z-index:40;
+	transform: rotate(5deg);
+
+}
+
+.bg-2::after{
+    position:absolute;
+    top:100%;
+    right:0;
+    content:'';
+    height:0;
+    width:0;
+    border-right:100vw solid black;
+    border-bottom:7vw solid transparent;
+    border-top:0px solid transparent;
+    overflow:hidden;
+  }
+
+
+
+
 
 ul{
 	display:flex;
