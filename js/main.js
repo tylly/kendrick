@@ -1,6 +1,7 @@
 //define your functions then make them appear on hover
 var imageFile = ["url(tpab.jpg)","url(good.png)", "url(damn.jpg)"];
-var imageFile2 = ["kendrick_tpab.png","kendrick_gkmc3.png", "kendrick_damn.png"]
+var imageFile2 = ["kendrick_tpab.png","kendrick_gkmc3.png", "kendrick_damn.png"];
+var switcher = false;
 $("#home").css('background-image', imageFile[1]);
 
 img1 = new Image();
@@ -39,7 +40,7 @@ document.getElementById("damn").addEventListener("mouseover", function(){
 });
 
 
-$(window).one("scroll",function () {
+$(window).scroll(function () {
     
     var topDivHeight = $("#home").height() + $("#about").height() + ($("#ting").height()*4);
     var viewPortSize = $(window).height();
@@ -48,6 +49,8 @@ $(window).one("scroll",function () {
     var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
 
     if ($(window).scrollTop() - (viewPortSize / 2) >= triggerHeight) {
+        if (switcher == false){
+            switcher = true
         /*$('.home-about-info').slideDown(1000);
         $('.home-about-img').slideDown(1000);
         $(this).off('scroll');*/
@@ -74,6 +77,7 @@ $(window).one("scroll",function () {
         },200);
         //document.getElemenyById("main-tpab").style.webkitAnimationPlayState = "paused";
         //$(this).off('scroll');
+    }
     }
     
 });
