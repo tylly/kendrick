@@ -99,14 +99,14 @@ a{
 }
 
 #album-titles{
-	padding-top:3em;
+	padding-top:1em;
 	position:relative;
 	z-index:900;
 }
 
 #album-titles h4{
 	text-align:left;
-	padding-top:1em;
+	padding-top:.3em;
 	font-family: 'Rock Salt', cursive;
 	font-size:2em;
 	padding-left:2em;
@@ -186,7 +186,7 @@ a{
 }
 
 #tpab-hero{
-	height:100vh;
+	height:120vh;
 	width:100%;
 	position:relative;
 	z-index:90;
@@ -207,6 +207,11 @@ a{
 @keyframes slideup {
   from { background-position: 0% 0%; }
   to { background-position: 0% -90000%; }
+}
+
+@keyframes slidedown {
+  from { background-position: 0% -90000%; }
+  to { background-position: 0% 0%; }
 }
 
 
@@ -285,6 +290,30 @@ a{
 	color:white;
 }
 
+#tpab-info{
+	position:absolute;
+	z-index:50;
+	height:90vh;
+	top:20vh;
+	left:6vw;
+	opacity:0;
+	width:90vw;
+	background:rgba(0,0,0,0.8); 
+	color:white;
+}
+
+#damn-info{
+	position:absolute;
+	z-index:50;
+	height:90vh;
+	top:20vh;
+	left:6vw;
+	opacity:0;
+	width:90vw;
+	background:rgba(0,0,0,0.8); 
+	color:white;
+}
+
 .info-headers{
 	padding: 4em;
 }
@@ -301,22 +330,114 @@ a{
 	color:#00FFB4;
 }
 
+
+
 #main-tpab{
-	height:107vh;
+	height:120vh;
 	background:url("../clouds-tpab2.png");
 	background-color:grey;
-	
-  	animation: slideup 300s infinite linear;
+}
+
+.tpab-initial{
+	animation: slideup 100s infinite linear;
+}
+
+.tpab-triggered{
+	animation: slideup 600s infinite linear;
 }
 
 #falling{
 	position:absolute;
+	padding-top:20vh;
+	padding-left:10vw;
 	z-index:30;
-	width:30vw;
-	height:80vh;
+	width:25vw;
+	height:62vh;
 	left:5vw;
 	top:20vh;	
 
+}
+
+#wings{
+	position:absolute;
+	padding-top:21vh;
+	padding-left:18vw;
+	width:35vw;
+	height:50vh;
+	opacity:0;
+}
+
+#butterfly{
+	opacity:.7;
+	height:70vh;
+	width:50vw;
+}
+
+#flies1{
+	position:absolute;
+	padding-top:65vh;
+	padding-left:50vw;
+
+	height:25vh;
+	width:25vw;
+	opacity:0;
+
+}
+
+#flies2{
+	position:absolute;
+	padding-top:40vh;
+	padding-left:65vw;
+	height:18vh;
+	width:18vw;
+	opacity:0;
+
+}
+
+#flies3{
+	position:absolute;
+	padding-top:25vh;
+	padding-left:75vw;
+	height:11vh;
+	width:11vw;
+	opacity:0;
+
+}
+
+#flies4{
+	position:absolute;
+	padding-top:16vh;
+	padding-left:85vw;
+	height:5vh;
+	width:5vw;
+	opacity:0;
+
+}
+
+#flies5{
+	position:absolute;
+	padding-top:8vh;
+	padding-left:90vw;
+	height:3vh;
+	width:3vw;
+	opacity:0;
+
+}
+
+#kfk{
+	position:absolute;
+	height:50vh;
+	width:30vw;
+	bottom:0;
+	right:-10vw;
+}
+
+#kfktext{
+	position:relative;
+	height:17vh;
+	width:40vw;
+	padding-top:36vh;
+	padding-left:10vw;
 }
 
 .bg-2{
@@ -359,5 +480,14 @@ a{
 
 ul{
 	display:flex;
+}
+
+#damn-hero{
+	height:120vh;
+	width:100%;
+	position:relative;
+	z-index:90;
+	background:url("../pattern5.png");
+	background-color:#2C0707;
 }
 

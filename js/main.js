@@ -97,29 +97,70 @@ $(window).scroll(function () {
         console.log($(window).scrollTop() - (viewPortSize / 2) - triggerHeight);
         console.log("anything?");
 
-        setTimeout(function(){ document.getElementById("main-tpab").style.webkitAnimationPlayState = 'paused'; },2000);
+        //setTimeout(function(){ document.getElementById("main-tpab").style.webkitAnimationPlayState = 'paused'; },2000);
         setTimeout(function(){ document.getElementById("main-tpab").style.backgroundColor = "#87cefa"; },2000);
-        //$("#city").css("bottom",(($(window).scrollTop() - (viewPortSize / 2) - triggerHeight)/10) +"px");
-        /*$('#city').animate({
-    right: [ "20vw", "linear" ],
-    opacity: [1,"linear"],
-    width:["150vw","linear"],
-    height:["120vh","linear"],
-    paddingTop:["10vh","linear"]
-}, 900 );
-        $('#trees').animate({
-    left: [ "20vw", "linear" ]
-}, 900 );
-        $('#cars').animate({
-    left: [ "1vw", "linear" ]
-}, 900 );
+        setTimeout(function(){ document.getElementById("wings").style.opacity = 1; },2500);
+        setTimeout(function(){ document.getElementById("flies1").style.opacity = 1; },2200);
+        setTimeout(function(){ document.getElementById("flies2").style.opacity = 1; },2400);
+        setTimeout(function(){ document.getElementById("flies3").style.opacity = 1; },2600);
+        setTimeout(function(){ document.getElementById("flies4").style.opacity = 1; },2800);
+        setTimeout(function(){ document.getElementById("flies5").style.opacity = 1; },3000);
 
-        $('#gkmc-info').animate({
-            opacity: ["0","linear"]
-        },1200).animate({
-            opacity: ["1","linear"]
-        },200);*/
-        $(this).off('scroll');
+        $("#main-tpab").removeClass("tpab_initial");
+        $("#main-tpab").addClass("tpab_triggered");
+        setTimeout(function(){ document.getElementById("tpab-info").style.opacity = 1; },3500);
+
+        setTimeout(function(){ document.getElementById("main-tpab").style.animation = "slidedown 1500s infinite linear"; },2000);
+        //setTimeout(function(){ document.getElementById("main-tpab").style.webkitAnimationPlayState = 'running'; },2100);
+        //get the opacity of the butterflies to come one by one
+        //get wings on my guys to show up
+
+        
+        //$(this).off('scroll');
+    }
+    
+});
+
+$(window).scroll(function () {
+    
+    var topDivHeight = $("#home").height() + $("#about").height() + ($("#ting").height()*2.4) + $("#main-gkmc").height() + ($("#tpab-hero").height()/2);
+    var viewPortSize = $(window).height();
+
+    var triggerAt = 150;
+    var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
+
+    if ($(window).scrollTop() - (viewPortSize / 2) >= triggerHeight) {
+        /*$('.home-about-info').slideDown(1000);
+        $('.home-about-img').slideDown(1000);
+        $(this).off('scroll');*/
+        console.log($(window).scrollTop() - (viewPortSize / 2) - triggerHeight);
+        console.log("anything?");
+
+        //setTimeout(function(){ document.getElementById("main-tpab").style.webkitAnimationPlayState = 'paused'; },2000);
+        //setTimeout(function(){ document.getElementById("damn-hero").style.backgroundColor = "red"; },2000);
+        setTimeout(function(){ document.getElementById("damn-hero").style.background = "red url('../pattern6.png')"; },2000);
+        setTimeout(function(){ document.getElementById("damn-hero").style.animation = "slideleft 1500s infinite linear"; },2000);
+        setTimeout(function(){ document.getElementById("kfk").style.height = "100vh"; },2000);
+        setTimeout(function(){ document.getElementById("kfk").style.width = "60vw"; },2000);
+        setTimeout(function(){ document.getElementById("damn-info").style.opacity = "1.0"; },3000);
+        /*setTimeout(function(){ document.getElementById("wings").style.opacity = 1; },2500);
+        setTimeout(function(){ document.getElementById("flies1").style.opacity = 1; },2200);
+        setTimeout(function(){ document.getElementById("flies2").style.opacity = 1; },2400);
+        setTimeout(function(){ document.getElementById("flies3").style.opacity = 1; },2600);
+        setTimeout(function(){ document.getElementById("flies4").style.opacity = 1; },2800);
+        setTimeout(function(){ document.getElementById("flies5").style.opacity = 1; },3000);
+
+        $("#main-tpab").removeClass("tpab_initial");
+        $("#main-tpab").addClass("tpab_triggered");
+        setTimeout(function(){ document.getElementById("tpab-info").style.opacity = 1; },3500);
+
+        setTimeout(function(){ document.getElementById("main-tpab").style.animation = "slidedown 1500s infinite linear"; },2000);*/
+        //setTimeout(function(){ document.getElementById("main-tpab").style.webkitAnimationPlayState = 'running'; },2100);
+        //get the opacity of the butterflies to come one by one
+        //get wings on my guys to show up
+
+        
+        //$(this).off('scroll');
     }
     
 });
