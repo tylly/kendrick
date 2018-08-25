@@ -138,7 +138,7 @@ $(window).scroll(function () {
 
         //setTimeout(function(){ document.getElementById("main-tpab").style.webkitAnimationPlayState = 'paused'; },2000);
         //setTimeout(function(){ document.getElementById("damn-hero").style.backgroundColor = "red"; },2000);
-        setTimeout(function(){ document.getElementById("damn-hero").style.backgroundColor = "red"; },2000);
+        setTimeout(function(){ document.getElementById("damn-hero").style.background = "red url('../pattern6.png')"; },2000);
         setTimeout(function(){ document.getElementById("damn-hero").style.animation = "slideleft 1500s infinite linear"; },2000);
         setTimeout(function(){ document.getElementById("kfk").style.height = "100vh"; },2000);
         setTimeout(function(){ document.getElementById("kfk").style.width = "60vw"; },2000);
